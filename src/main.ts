@@ -17,6 +17,7 @@ import { environment } from './environments/environment';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getStorage, provideStorage } from '@angular/fire/storage';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 if (environment.production) {
   enableProdMode();
@@ -26,6 +27,7 @@ bootstrapApplication(AppComponent, {
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     provideIonicAngular(),
+    provideHttpClient(withFetch()),
     provideRouter(routes, withPreloading(PreloadAllModules)),
     provideFirebaseApp(() =>
       initializeApp({

@@ -14,4 +14,8 @@ export const routes: Routes = [
     path: 'post-firestore-page',
     loadComponent: () => import('./pages/ui/post-firestore-page/post-firestore-page.page').then( m => m.PostFirestorePagePage)
   },
+  {
+    path: 'post-service',
+    loadComponent: () => import('./pages/ui/post-service/post-service.page').then( m => m.PostServicePage)
+  },
 ];
