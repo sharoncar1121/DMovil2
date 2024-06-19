@@ -8,15 +8,12 @@
 
 <ion-content [fullscreen]="true">
   <ion-item>
-    <ion-img [src]="imageSrc" (click)="pickPhoto()" class="user-photo"></ion-img>
+    <ion-img [src]="imageSrc"></ion-img>
   </ion-item>
-  <ion-buttons slot="end">
-    <ion-button color="primary">
-      <ion-icon slot="icon-only" name="images-outline" (click)="pickPhoto()"></ion-icon>
+    <ion-button color="primary " (click)="pickPhoto()" size="large">
+      <ion-icon slot="icon-only" name="images-outline"></ion-icon>
     </ion-button>
-    <ion-button color="primary">
-      <ion-icon slot="icon-only" name="location-outline"></ion-icon>
+    <ion-button color="primary" size="medium">
+      <ion-icon slot="start" name="location-outline"></ion-icon>
     </ion-button>
-  </ion-buttons>
-</ion-toolbar>
 </ion-content>

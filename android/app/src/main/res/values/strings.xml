@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">DMovil2</string>
+    <string name="title_activity_main">DMovil2</string>
+    <string name="package_name">com.Dmovilap2.myapp</string>
+    <string name="custom_url_scheme">com.Dmovilap2.myapp</string>
+</resources>

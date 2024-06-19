@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonItem } from '@ionic/angular/standalone';
-import{ Camera, CameraResultType} from '@capacitor/camera'
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonImg, IonButton, IonButtons, IonIcon } from '@ionic/angular/standalone';
+import{ Camera, CameraResultType} from '@capacitor/camera';
+import { CommonModule } from '@angular/common';
+import { addIcons } from 'ionicons';
+import {  imagesOutline, locationOutline} from 'ionicons/icons';
 
 
 @Component({
@@ -8,12 +11,14 @@ import{ Camera, CameraResultType} from '@capacitor/camera'
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent,IonItem],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent,IonItem, IonImg, IonButton, IonButtons, IonIcon],
 })
 export class HomePage {
 
   imageSrc: string= '';
-  constructor() {}
+  constructor() {
+    addIcons({ imagesOutline, locationOutline });
+  }
   
   async pickPhoto() {
     const image = await Camera.getPhoto({

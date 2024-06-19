@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "958353870658",
+    "project_id": "dmovil2-32dec",
+    "storage_bucket": "dmovil2-32dec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958353870658:android:83f13f6254c849d10b82db",
+        "android_client_info": {
+          "package_name": "com.Dmovilap2.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_t7Nv09OzcXjnvE8OOSWHfCi8mcnANVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
